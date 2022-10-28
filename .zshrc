@@ -108,4 +108,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # To customize prompt, run `p10k configure` or edit /var/folders/sm/mvfcqj256y98qys3jj5bs_pr0000gp/T/vscode-zsh/.p10k.zsh.
-[[ ! -f /var/folders/sm/mvfcqj256y98qys3jj5bs_pr0000gp/T/vscode-zsh/.p10k.zsh ]] || source /var/folders/sm/mvfcqj256y98qys3jj5bs_pr0000gp/T/vscode-zsh/.p10k.zsh
+#[[ ! -f /var/folders/sm/mvfcqj256y98qys3jj5bs_pr0000gp/T/vscode-zsh/.p10k.zsh ]] || source /var/folders/sm/mvfcqj256y98qys3jj5bs_pr0000gp/T/vscode-zsh/.p10k.zsh
+print 'going to source ~/.p10k.zsh; press enter to continue'
+read
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
