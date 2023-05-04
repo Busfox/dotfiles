@@ -107,6 +107,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Load rbenv if installed
+export PATH="${HOME}/.rbenv/bin:${PATH}"
+type -a rbenv > /dev/null && eval "$(rbenv init -)"
+
 # To customize prompt, run `p10k configure` or edit /var/folders/sm/mvfcqj256y98qys3jj5bs_pr0000gp/T/vscode-zsh/.p10k.zsh.
 #[[ ! -f /var/folders/sm/mvfcqj256y98qys3jj5bs_pr0000gp/T/vscode-zsh/.p10k.zsh ]] || source /var/folders/sm/mvfcqj256y98qys3jj5bs_pr0000gp/T/vscode-zsh/.p10k.zsh
 print 'going to source ~/.p10k.zsh; press enter to continue'
